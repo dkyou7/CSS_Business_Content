@@ -505,3 +505,128 @@ border-left: solid 20px #c50018;
 
 ![image](https://user-images.githubusercontent.com/26649731/76914414-93912900-68fd-11ea-9e45-a930c1bf4f9d.png)
 
+```html
+<div class="bread">
+    <ol>
+        <li><a href="#">메인</a></li>
+        <li><a href="#">사업 소개</a></li>
+    </ol>
+</div>
+```
+
+```css
+/* 빵부스러기 리스트 */
+.bread{
+    margin-bottom: 20px;
+}
+.bread ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.bread li a{
+    display: inline-block;
+    color: #000000;
+    text-decoration: none;
+    font-size: 14px;
+}
+.bread li a:hover{
+    background-color: #eeeeee;
+}
+.bread ol:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.bread li{
+    float: left;
+    width: auto;
+}
+.bread li::after{
+    content: '\003e';
+    color: #888888;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+```
+
+### 5) 사이드바 디자인
+
+![image](https://user-images.githubusercontent.com/26649731/76915878-1caa5f00-6902-11ea-9e1c-055cc2cb951f.png)
+
+```html
+<div class="box7-2">
+            <aside class="sidemenu">
+                <h1><i class="fa fa-caret-square-o-down"></i>사업 소개</h1>
+                <ul>
+                    <li><a href="#">데이터 축적</a></li>
+                    <li><a href="#">데이터 분석/해석</a></li>
+                    <li><a href="#">데이터 시각화</a></li>
+                    <li><a href="#">애플리케이션 활용</a></li>
+                    <li><a href="#">24시간 지원</a></li>
+                    <li><a href="#">실적 소개</a></li>
+                </ul>
+            </aside>
+        </div>
+```
+
+```css
+/* 사이드 매뉴 */
+.sidemenu{
+    border: solid 6px #eeeeee;
+}
+.sidemenu h1{
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+    padding: 10px;
+}
+.sidemenu h1 i{
+    margin-right: 5px;
+    color: #8abc60;
+    font-size: larger;
+}
+.sidemenu ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.sidemenu li a{
+    display: block;
+    padding: 10px;
+    color: #000000;
+    font-size:14px;
+    text-decoration: none;
+    border-top: 1px solid #dddddd;
+}
+.sidemenu li a:hover{
+    background-color: #eeeeee;
+}
+```
+
+### 6) 글 단락 2단 구성
+
+![image](https://user-images.githubusercontent.com/26649731/76916368-91ca6400-6903-11ea-96c0-dfaa346d289d.png)
+
+- 311p
+
+```html
+<div class="story-body">
+    <p>
+        힘...바람이다.
+    </p>
+    	광야에서 .....인도하겠다는 열매를 돋고, 없으면, 듣는다.
+    <p>d
+        무엇이 유소... 것이다.
+    </p>
+</div>
+```
+
+```css
+.story-body{
+    margin-top: 40px;
+    column-count: 2;
+    column-gap: 40px;
+}
+```
+
