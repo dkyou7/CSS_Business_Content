@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="box1">
+                <div class="header-site">
+                    <h1><a href="#"><img src="img/06/logo-large.png" alt="Business"></a></h1>
+                </div>
+            </div>
+            <div class="box2">
+                <button type="button" id="header-menubtn">
+                    <i class="fa fa-bars"></i><span>MENU</span>
+                </button>
+                <nav class="header-nav" id="menu">
+                    <ul>
+                        <li><a href="#">메인</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">사업 소개</a></li>
+                        <li><a href="#">채용 정보</a></li>
+                        <li><a href="#">문의</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="box7">
+        <div class="box7-1">
+            <article class="story">
+                <div class="bread">
+                    <ol>
+                        <li><a href="#">메인</a></li>
+                        <li><a href="#">사업 소개</a></li>
+                    </ol>
+                </div>
+                <h1>데이터 분석/해석</h1>
+                <img src="img/06/header-data.jpg" alt="" class="storyimg">
+                <p class="lead">인간의 구하기 가는 유소년에게서 우리 구하지 그들의 이것이야말로 피어나는 있다. 불러 피가 커다란 봄바람이다.</p>
+    
+                <h2><i class="fa fa-check-square-o"></i>평균값 확인</h2>
+                <p>이상의 되는 옷을 피가 이상의 커다란 같은 운다. 우리는 우는 영락과 안고, 뜨거운지라, 속잎나고, 피다. 인류의 눈에 눈이 무엇이 바이며, 동력은 없으면, 생명을 청춘 아니다.</p>
+                <h2><i class="fa fa-check-square-o"></i>분석 확인</h2>
+                <p>생생하며, 그것은 보이는 석가는 뼈 커다란 황금시대다. 그것은 작고 가슴에 끓는 위하여, 심장의 가치를 운다.</p>
+                <h2><i class="fa fa-check-square-o"></i>상관관계/인과관계 도출</h2>
+                <p>수 그와 불어 내려온 오아이스도 철환하였는가? 인생을 아니한 같지 가슴에 아니더면, 있는가? 원질이 미인을 예가 발휘하기 곳이 우리 봄날의 목숨이 같은 것이다.</p>           
+            </article>
+        </div>
+        <div class="box7-2">
+            <aside class="sidemenu">
+                <ul>
+                    <li><a href="#">데이터 축적</a></li>
+                    <li><a href="#">데이터 분석/해석</a></li>
+                    <li><a href="#">데이터 시각화</a></li>
+                    <li><a href="#">애플리케이션 활용</a></li>
+                    <li><a href="#">24시간 지원</a></li>
+                    <li><a href="#">실적 소개</a></li>
+                </ul>
+            </aside>
+        </div>       
+    </div>  
+    
+    <footer class="footer">
+        <div class="box5-inner">
+            <div class="copyright">
+                Copyright &copy; Business CSS
+            </div>
+        </div>
+    </footer>
+    <script>
+        $(function(){
+            $("#header-menubtn").click(function(){
+                $("#menu").slideToggle();
+            });
+                        
+        });
+    </script>
+</body>
+</html>
